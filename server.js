@@ -28,7 +28,7 @@ app.use(express.json());
 
 // Connect to MongoDB and seed doctors if collection is empty
 mongoose
-  .connect(process.env.MONGODB_URI, {
+  .connect("mongodb+srv://NRSRaju:Raju9398@cluster0.gquv6.mongodb.net/Appointment-Booking-System?retryWrites=true&w=majority&appName=Cluster0", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
